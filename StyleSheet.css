@@ -1,0 +1,36 @@
+body {
+  background-color: #242424;
+}
+h1 {
+  color: White;
+  font-family:sans-serif;
+}
+p {
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+b {
+	font-size: 55px;
+}
+
+#car {
+	height: 400px;
+	width: 1920;
+}
+
+#top {
+	height: 105px;
+	width: 1920;
+	border: 5px 0 0 5px;
+	border-style: solid;
+    border-color: white;
+}
+
+.gear {
+	float: right;
+	
+	height: 125%;
+	margin: 0 20px 0px 20px;
+}
