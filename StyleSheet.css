@@ -34,10 +34,12 @@ b {
 
 #text {
 	float: left;
+	height: fit-content;
 }
 
 #image {
 	float: right;
+	
 }
 
 #text, #image {
@@ -50,6 +52,6 @@ b {
 .gear {
 	float: right;
 	/*height: 125%;*/
-	width: 400px;
+	width: 500px;
 	margin: 0 20px 0px 20px;
 }
