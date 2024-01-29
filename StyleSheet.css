@@ -11,9 +11,9 @@ p {
   font-family: sans-serif;
 }
 
-b {
+/*b {
 	font-size: 55px;
-}
+}*/
 
 #content {
 	height: auto/*400px*/;
@@ -22,6 +22,7 @@ b {
 	/*flex-direction : row-reverse; /* Reversed order of children elements */
 	align-items : flex-start; 
 	justify-content : space-between; 
+	/*border-bottom: 40px;*/
 }
 
 #top {

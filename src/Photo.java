@@ -34,7 +34,7 @@ public class Photo {
 		for(int i = 0; i < amtPhotos; i++) {
 			retVal += "<div id = content>\n"
 					+ "\t<div id = text>\n"
-					+ "\t\t<p>" + link.get(i).getDescription() + "</p>\n"
+					+ "\t\t<p>" + link.get(i).getDescription() + "</p>\n\t\t<br><br><br><br>\n\t\t<br><br><br><br>\n"
 					+ "\t</div>\n"
 					
 					+ "\t\n<div id = image>\n"
