@@ -4,8 +4,10 @@ public class Photo {
 
 	private int weekNum;
 	private String ActivityName;
-	int amtPhotos;
-	LinkedList<Linker> link;
+	private int amtPhotos;
+	private LinkedList<Linker> link;
+
+	
 	
 	public Photo(int WN, String AC, int AMT, LinkedList<Linker> l) {
 		this.weekNum = WN;
@@ -13,6 +15,8 @@ public class Photo {
 		this.amtPhotos = AMT;
 		link = l;
 	}
+	
+	
 	
 	
 	public int getWeekNum() {
@@ -23,15 +27,24 @@ public class Photo {
 	public String toStringHTML() {
 		
 		String retVal = ("<br>\n<br>\n"
-				+ "<div id = car>\n"
-				+ "<p>" + "<u>Week " + weekNum + "</u>");
+				+ "<div id = content>\n"
+				+ "\t<p>" + "<u>Week " + weekNum + ":</u> " + ActivityName + "\n"
+				+ "</div>\n");
 		
 		for(int i = 0; i < amtPhotos; i++) {
-			retVal += "</p>\n<img class = gear src=\"images/" + link.get(i).getFile() + "\">";
-			retVal += "\n<p>" + link.get(i).getDescription() + "</p>\n";
+			retVal += "<div id = content>\n"
+					+ "\t<div id = text>\n"
+					+ "\t\t<p>" + link.get(i).getDescription() + "</p>\n"
+					+ "\t</div>\n"
+					
+					+ "\t\n<div id = image>\n"
+					+ "\t\t <img class = gear src=\"images/" + link.get(i).getFile() + "\">\n"
+					+ "\t</div>\n"
+					+ "\n</div>\n\n";
+			
+			//retVal += "</p>\n<img class = gear src=\"images/" + link.get(i).getFile() + "\">";
+			//retVal += "\n<p>" + link.get(i).getDescription() + "</p>\n";
 		}		
-		
-		retVal += "\n</div>\n";
 		return retVal;
 	}
 	

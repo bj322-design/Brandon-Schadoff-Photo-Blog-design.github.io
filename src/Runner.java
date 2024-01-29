@@ -22,8 +22,8 @@ public class Runner {
             int weekNum = scan.nextInt();
 
             String ActivityName = scan.next();
-
             amtPhotos = scan.nextInt();
+            
 
             String PhotoFile;
             LinkedList<String> description = new LinkedList<String>();
@@ -49,7 +49,8 @@ public class Runner {
         }
     }
 
-    private static LinkedList<String> Description(Scanner scan) {
+   
+	private static LinkedList<String> Description(Scanner scan) {
         String str = scan.next();
         LinkedList<String> retVal = new LinkedList<String>();
         while (scan.hasNext() && (!str.equals("*"))) {
