@@ -11,9 +11,10 @@ p {
   font-family: sans-serif;
 }
 
-/*b {
-	font-size: 55px;
-}*/
+b1 {
+	font-size: 35px;
+	font-family: sans-serif;
+}
 
 #content {
 	height: auto/*400px*/;

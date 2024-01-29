@@ -28,7 +28,7 @@ public class Photo {
 		
 		String retVal = ("<br>\n<br>\n"
 				+ "<div id = content>\n"
-				+ "\t<p>" + "<u>Week " + weekNum + ":</u> " + ActivityName + "\n"
+				+ "\t<p>" + "<b1>Week " + weekNum + ": " + ActivityName + "</b1>\n"
 				+ "</div>\n");
 		
 		for(int i = 0; i < amtPhotos; i++) {
